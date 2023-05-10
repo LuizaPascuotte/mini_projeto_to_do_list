@@ -1,9 +1,10 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return render(request, "index.html")
 
 
 def cadastro(request):
-    return HttpResponse("Cadastro aqui ó")
+    return render(request, "cadastro.html")
